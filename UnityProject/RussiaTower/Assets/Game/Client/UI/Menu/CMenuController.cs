@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CMenuController : MonoBehaviour {
 
@@ -15,5 +16,6 @@ public class CMenuController : MonoBehaviour {
 
     void OnStart() {
         print("onStart");
+        SceneManager.LoadScene("tower");
     }
 }

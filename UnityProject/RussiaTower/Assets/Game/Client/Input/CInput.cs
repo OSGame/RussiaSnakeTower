@@ -17,36 +17,45 @@ public class CInput : MonoBehaviour {
         float x = CKeyboard.GetHorizontal();
         if (x > 0) {
             // right
-            OnRight(x);
+            _OnRight(x);
         } else if (x < 0) {
             // left
-            OnLeft(x);
+            _OnLeft(x);
         }
 
         float y = CKeyboard.GetVertical();
         if (y > 0) {
             // up
-            OnUp(y);
+            _OnUp(y);
         } else if (y < 0) {
             // down
-            OnDown(y);
+            _OnDown(y);
+        }
+
+        float space = CKeyboard.GetJump();
+        if (space > 0) {
+            _OnSpace(space);
         }
     }
 
-    void OnLeft(float value) {
+    void _OnLeft(float value) {
         print("OnLeft : " + value);
     }
-    void OnRight(float value) {
+    void _OnRight(float value) {
         print("OnRight : " + value);
     }
-    void OnUp(float value) {
+    void _OnUp(float value) {
         print("OnUp : " + value);
     }
-    void OnDown(float value) {
+    void _OnDown(float value) {
         print("OnDown : " + value);
     }
 
-    void OnJump(float value) {
+    void _OnJump(float value) {
         print("OnJump : " + value);
+    }
+
+    void _OnSpace(float value) {
+        print("_OnSpace : " + value);
     }
 }

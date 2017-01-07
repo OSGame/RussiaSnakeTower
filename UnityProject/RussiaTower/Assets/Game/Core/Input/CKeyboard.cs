@@ -2,32 +2,32 @@
 using UnityStandardAssets.CrossPlatformInput;
 
 public class CKeyboard {
-    public float GetAxis(string name)
+    public static float GetAxis(string name)
     {
         return CrossPlatformInputManager.GetAxis(name);
     }
 
-    public float GetHorizontal()
+    public static float GetHorizontal()
     {
         return CrossPlatformInputManager.GetAxis(INPUT_Horizontal);
     }
-    public float GetINPUT_Vertical()
+    public static float GetVertical()
     {
         return CrossPlatformInputManager.GetAxis(INPUT_Vertical);
     }
-    public float GetFire1()
+    public static float GetFire1()
     {
         return CrossPlatformInputManager.GetAxis(INPUT_Fire1);
     }
-    public float GetFire2()
+    public static float GetFire2()
     {
         return CrossPlatformInputManager.GetAxis(INPUT_Fire2);
     }
-    public float GetFire3()
+    public static float GetFire3()
     {
         return CrossPlatformInputManager.GetAxis(INPUT_Fire3);
     }
-    public float GetJump()
+    public static float GetJump()
     {
         return CrossPlatformInputManager.GetAxis(INPUT_Jump);
     }
