@@ -20,7 +20,7 @@ public class CGameMenu : MonoBehaviour {
 	}
 
     public void OnExit() {
-        SceneManager.LoadScene("menu");
+        SceneManager.LoadScene("main_menu");
     }
 
     public void OnRestart() {
