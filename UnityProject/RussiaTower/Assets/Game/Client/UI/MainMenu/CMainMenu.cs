@@ -2,11 +2,11 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class CMenuController : MonoBehaviour {
+public class CMainMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        print("Start");
+        print("CMainMenu Start");
     }
 	
 	// Update is called once per frame
@@ -14,7 +14,7 @@ public class CMenuController : MonoBehaviour {
 	
 	}
 
-    void OnStart() {
+    public void OnStart() {
         print("onStart");
         SceneManager.LoadScene("tower");
     }

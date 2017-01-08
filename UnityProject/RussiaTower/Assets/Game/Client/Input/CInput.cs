@@ -40,6 +40,8 @@ public class CInput : MonoBehaviour {
 
     void _OnLeft(float value) {
         print("OnLeft : " + value);
+        gameObject.get
+
     }
     void _OnRight(float value) {
         print("OnRight : " + value);
